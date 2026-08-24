@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DBShield | Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+    <div class="brand">DB<span>Shield</span></div>
+    <div>
+        <span id="userInfo"></span>
+        <button class="outline" onclick="logout()">Logout</button>
+    </div>
+</nav>
+
+<main class="container">
+    <div class="hero">
+        <div>
+            <p class="eyebrow">SECURITY OPERATIONS CENTER</p>
+            <h1>Database Security Dashboard</h1>
+            <p class="muted">Controlled assessment, hardening and verification.</p>
+        </div>
+    </div>
+
+    <section class="cards">
+        <div class="stat"><span>Security Score</span><strong id="score">--</strong><small>/100</small></div>
+        <div class="stat"><span>Vulnerabilities</span><strong id="vulns">0</strong></div>
+        <div class="stat"><span>Tests Performed</span><strong id="tests">0</strong></div>
+        <div class="stat"><span>Passed / Blocked</span><strong id="passed">0</strong></div>
+    </section>
+
+    <section class="grid">
+        <a class="module-card" href="hacking.html">
+            <span class="tag danger">MODULE 1</span>
+            <h2>Ethical Hacking</h2>
+            <p>Run controlled vulnerability assessments against the security-lab application.</p>
+        </a>
+        <a class="module-card" href="hardening.html">
+            <span class="tag safe">MODULE 2</span>
+            <h2>Database Hardening</h2>
+            <p>Manage security controls and verify protection after remediation.</p>
+        </a>
+        <a class="module-card" href="audit.html">
+            <h2>Audit Logs</h2>
+            <p>Review authentication, testing and hardening events.</p>
+        </a>
+        <a class="module-card" href="reports.html">
+            <h2>Security Report</h2>
+            <p>View the current assessment score and complete test history.</p>
+        </a>
+    </section>
+</main>
+<script src="js/app.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
