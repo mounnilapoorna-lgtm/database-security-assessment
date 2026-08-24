@@ -1,5 +1,0 @@
-Flask
-Flask-CORS
-Flask-SQLAlchemy
-Flask-Login
-Werkzeug
